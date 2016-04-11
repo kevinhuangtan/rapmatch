@@ -51,7 +51,7 @@ var Container = React.createClass({
 
           <div className="title-container">
             <h1 className="title">RAP MATCH</h1>
-            <p>Connect to rappers and producers by swiping like Tinder</p>
+            <p>Connect with rappers and producers by swiping like Tinder</p>
             <div className="request-holder">
               <ReactCSSTransitionGroup className="css-transition" transitionName="request" >
                 {Request}
@@ -68,7 +68,7 @@ var Container = React.createClass({
                 <img src="/images/ios.png"/>
               </div>
             <ul>
-              <li><strong>Rappers</strong> find beats and <strong>producers</strong> get their beats to rappers</li>
+              <li><strong>Rappers</strong> find beats and <strong>producers</strong> find rappers to use their beats</li>
               <li>Match and connect with an artist</li>
               <li>Expand your network</li>
             </ul>
