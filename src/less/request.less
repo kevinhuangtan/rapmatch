@@ -1,0 +1,28 @@
+.request-enter { //new thing added
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-15px);
+  -webkit-transform: translateX(-15px);
+
+}
+
+.request-enter.request-enter-active {
+  visibility: visible;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s, opacity 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s;
+  transition: transform 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s, opacity 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s;
+
+}
+
+.request-leave {
+  opacity: 0;
+  display: none;
+}
+
+.request-leave.request-leave-active {
+  opacity: 0.01;
+  display: none;
+  // transition: opacity 100ms ease-in;
+}
