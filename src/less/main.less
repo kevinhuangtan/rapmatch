@@ -1,9 +1,9 @@
 body{
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif!important;
   // font-family: AvenirNext-Regular;
-  color: #B68989;
+  color: #B68989!important;
   font-weight: 300;
 }
 .title-container{
@@ -40,7 +40,7 @@ body{
     justify-content: flex-start;
   }
   input{
-    height: 32px;
+    height: 48px;
     border:0;
     width: 200px;
     border-bottom: 2px solid black;
@@ -55,7 +55,7 @@ body{
     outline :0 ;
   }
   button{
-    height: 40px;
+    height: 50px;
     background-color: #363636;
     border-radius: 0;
     padding: 10px;
@@ -92,9 +92,55 @@ img{
   height: 100%;
   width: 100%;
   position: absolute;
-  // bottom-b
   border-bottom: 1px solid rgba(0,0,0,.1);
 }
+.nav{
+
+  // bottom: 10px;
+  position: absolute;
+  margin: 0 auto;
+  left:0;
+  right: 0;
+  -webkit-animation:bounce 2s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  .transition;
+  // cursor: pointer;
+  .glyphicon{
+    margin: 15px;
+    font-size: 15px;
+  }
+}
+
+
+
+@-webkit-keyframes bounce {
+  0% {
+     transform: translateY(0px);
+  }
+  50%{
+     transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.Slide0{
+  .glyphicon{
+    font-size: 40px;
+    position: absolute;
+    bottom:20px!important;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    top: auto;
+    // height: 40px;
+    // width: 40px;
+    // .next;
+    .nav;
+    text-align: center;
+  }
+}
+
 .Slide1{
   top:100%;
 
@@ -104,12 +150,16 @@ img{
     // width: 100%;
     margin: 0 auto;
     height: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
   }
   .img-container{
     flex:1;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   img{
     display: block;
@@ -117,16 +167,17 @@ img{
     height: auto;
     // margin:0 auto;
     //
-    margin-right: 30px;
+    margin-right: 10px;
     box-shadow: -2px 2px 2px rgba(0,0,0,.2);
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
   }
   ul{
     // text-align: center;
     flex:1;
-    margin-left: 30px;
+    margin-left: 10px;
     font-size: 18px;
     letter-spacing: 1px;
+    padding-left: 10px;
     li{
       margin: 10px;
     }
@@ -178,16 +229,25 @@ img{
 
     }
   }
+  .glyphicon{
+    bottom:0;
+    -webkit-animation: none;
+    display: none!important;
+
+  }
   .Slide1{
     .container{
       flex-direction: column;
+      width: 100%;
       img{
         margin: 0 auto;
       }
     }
     ul{
-      margin-left: 0;
+      margin-top: 20px;
+      margin-left: 20px;
       margin-bottom: 0;
+      font-size: 14px;
     }
   }
 }

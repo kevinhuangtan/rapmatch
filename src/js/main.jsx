@@ -51,13 +51,15 @@ var Container = React.createClass({
 
           <div className="title-container">
             <h1 className="title">RAP MATCH</h1>
-            <p>Find beats and freestyles by swiping like Tinder</p>
+            <p>Connect to rappers and producers by swiping like Tinder</p>
             <div className="request-holder">
               <ReactCSSTransitionGroup className="css-transition" transitionName="request" >
                 {Request}
               </ReactCSSTransitionGroup>
           </div>
           </div>
+          <span className="glyphicon glyphicon-chevron-down"></span>
+
         </section>
         <section className="Slide Slide1">
           <ReactCSSTransitionGroup className="css-transition" transitionName="example" transitionEnterTimeout={1500} transitionAppear={true} transitionLeave={true} transitionEnter={true} transitionAppearTimeout={1500}  transitionLeaveTimeout={400}>
@@ -66,8 +68,8 @@ var Container = React.createClass({
                 <img src="/images/ios.png"/>
               </div>
             <ul>
-              <li>Discover by swiping</li>
-              <li>Get a match</li>
+              <li><strong>Rappers</strong> find beats and <strong>producers</strong> get their beats to rappers</li>
+              <li>Match and connect with an artist</li>
               <li>Expand your network</li>
             </ul>
             </div>
