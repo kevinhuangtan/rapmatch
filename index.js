@@ -44,7 +44,8 @@ app.post('/requestInvite', function(req,res){
     signup.set("email", email);
 
     signup.save();
-    // return
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify({ a: 1 }, null, 3));
 })
 
 ////////////////////////////////////////////////
